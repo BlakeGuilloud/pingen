@@ -8,7 +8,7 @@ provider:
 
 functions:
   register:
-    handler: lib/register.handler
+    handler: lib/functions/register.handler
     events:
       - http:
           path: register
@@ -16,7 +16,7 @@ functions:
           cors: true
 
   request:
-    handler: lib/request.handler
+    handler: lib/functions/request.handler
     events:
       - http:
           path: request
@@ -24,7 +24,7 @@ functions:
           cors: true
 
   validate:
-    handler: lib/validate.handler
+    handler: lib/functions/validate.handler
     events:
       - http:
           path: validate
