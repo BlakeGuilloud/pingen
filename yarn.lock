@@ -876,9 +876,9 @@ semver@^5.1.0, semver@^5.3.0:
   version "5.4.1"
   resolved "https://registry.yarnpkg.com/semver/-/semver-5.4.1.tgz#e059c09d8571f0540823733433505d3a2f00b18e"
 
-serverless-helpers@^0.0.5:
-  version "0.0.5"
-  resolved "https://registry.yarnpkg.com/serverless-helpers/-/serverless-helpers-0.0.5.tgz#e2072bc4262b1ec166e0c423e23ebdd82c1b6aed"
+serverless-helpers@^0.0.6:
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/serverless-helpers/-/serverless-helpers-0.0.6.tgz#69e3ee55eb65d9424fe7b035b5ac45d7439870a6"
 
 shebang-command@^1.2.0:
   version "1.2.0"
