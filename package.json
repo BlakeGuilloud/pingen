@@ -1,0 +1,20 @@
+{
+  "name": "pingen",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Blake Guilloud <blake.guilloud@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint-config-blake": "^1.0.5"
+  },
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "mongoose": "^4.12.4",
+    "serverless-helpers": "^0.0.3"
+  },
+  "scripts": {
+    "mock:register": "SLS_DEBUG=true serverless invoke local --function register -p mocks/register.json",
+    "mock:request": "SLS_DEBUG=true serverless invoke local --function request -p mocks/request.json",
+    "mock:validate": "SLS_DEBUG=true serverless invoke local --function validate -p mocks/validate.json"
+  }
+}

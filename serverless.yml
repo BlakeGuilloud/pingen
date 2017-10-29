@@ -1,0 +1,32 @@
+service: pingen
+
+provider:
+  name: aws
+  runtime: nodejs6.10
+  environment:
+    MONGODB_URI: ${file(./config.yml):MONGODB_URI}
+
+functions:
+  register:
+    handler: lib/register.handler
+    events:
+      - http:
+          path: register
+          method: post
+          cors: true
+
+  request:
+    handler: lib/request.handler
+    events:
+      - http:
+          path: request
+          method: post
+          cors: true
+
+  validate:
+    handler: lib/validate.handler
+    events:
+      - http:
+          path: validate
+          method: post
+          cors: true
