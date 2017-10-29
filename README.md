@@ -2,6 +2,10 @@
 
 Let's give this another go.
 
+```javascript
+const baseUrl = 'https://k07pffa80g.execute-api.us-east-1.amazonaws.com/dev';
+```
+
 ### /register
 
 Method: POST
