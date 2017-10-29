@@ -10,7 +10,7 @@
   "dependencies": {
     "bluebird": "^3.5.1",
     "mongoose": "^4.12.4",
-    "serverless-helpers": "^0.0.3"
+    "serverless-helpers": "^0.0.5"
   },
   "scripts": {
     "mock:register": "SLS_DEBUG=true serverless invoke local --function register -p mocks/register.json",
